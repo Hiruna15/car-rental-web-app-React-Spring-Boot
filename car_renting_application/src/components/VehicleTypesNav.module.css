@@ -1,0 +1,27 @@
+.vehicleTypesNav {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.vehicleTypesNav ul {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  /* justify-content: center; */
+  list-style: none;
+}
+
+.vehicleTypesNav li {
+  cursor: pointer;
+  padding: 0.7em 2em;
+  border-radius: 3.5em;
+  background-color: #131317;
+  border: 1px solid #ffffff12;
+}
+
+.vehicleTypesNav .activeTab {
+  background-color: #05caad;
+  color: #111111;
+  font-weight: 600;
+}

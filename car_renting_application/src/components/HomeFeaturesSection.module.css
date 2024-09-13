@@ -1,0 +1,23 @@
+.features_container {
+  display: flex;
+  align-items: flex-end;
+}
+
+.left {
+  width: 296px;
+  height: 244px;
+  background-color: #131317;
+}
+
+.middel {
+  width: 396px;
+  height: 306px;
+  background-color: #05caad;
+  color: #111111;
+}
+
+.right {
+  width: 296px;
+  height: 244px;
+  background-color: #131317;
+}

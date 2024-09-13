@@ -1,0 +1,88 @@
+.vehicledetails_container {
+  display: flex;
+  gap: 10em;
+  /* width: 52em;
+  height: 32em; */
+  width: 55em;
+  height: 35em;
+  background-color: #131317;
+  align-items: center;
+  justify-content: center;
+}
+
+.vehicledetails_container > div {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.vehicledetails_container > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.vehicledetails_container > div > div > span {
+  color: #ffffff;
+  background-color: #1c1c22;
+  width: fit-content;
+  padding: 0.5em 1em;
+  border-radius: 0.4em;
+  font-size: 0.9rem;
+}
+
+.dropdown_container {
+  display: flex;
+  align-items: center;
+  padding: 0.9em 1.2em;
+  background-color: #1c1c22;
+  gap: 1em;
+  border-bottom: 2px solid #05caad;
+  position: relative;
+  box-shadow: 0 6px 12px #000000da;
+}
+
+.dropdown_container ul {
+  position: absolute;
+  top: 108%;
+  left: 0;
+  z-index: 2;
+  list-style: none;
+  max-height: 15em;
+  overflow: auto;
+  width: 100%;
+  background-color: #2b2b36;
+}
+
+.dropdown_container ul li {
+  background-color: #1c1c22;
+  padding: 0.5em 1em;
+  margin-bottom: 0.2em;
+  border-radius: 0.4em;
+  color: #ffffff;
+}
+
+.dropdown_container input {
+  font-size: 1rem;
+  background-color: transparent;
+  border: none;
+  width: 12em;
+  outline: none;
+  color: #ffffff;
+}
+
+.drop_down {
+  width: 1em;
+  height: 1em;
+}
+
+.input_fields {
+  font-size: 1rem;
+  padding: 0.9em 1.2em;
+  border: none;
+  outline: none;
+  background-color: #1c1c22;
+  border-bottom: 2px solid #05caad;
+  color: #ffffff;
+  box-shadow: 0 6px 12px #000000da;
+}

@@ -1,0 +1,15 @@
+.mybookings_container {
+  height: 95%;
+  align-self: flex-start;
+  width: 68em;
+  background-color: #131317;
+  border: 1px solid #ffffff08;
+  border-radius: 0.6em;
+  padding-top: 5em;
+  position: relative;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}

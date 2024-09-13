@@ -1,0 +1,93 @@
+.fullmap_container {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #101014d0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins";
+}
+
+.fullmap_container > div {
+  position: relative;
+  width: 85%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4em;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #1c1c22;
+  margin-top: 4em;
+  border: 1px solid #ffffff09;
+  box-shadow: 0 0 10px 1px #000000;
+}
+
+.fullmap_top {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+
+.fullmap_container > div > div:nth-child(2) {
+  height: 80%;
+  width: 98%;
+  overflow: hidden;
+  z-index: 0;
+  /* border-radius: 5px; */
+}
+
+.close_btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: 1px solid #27fef72a;
+  padding: 0.5em 1.5em;
+  cursor: pointer;
+  background-color: #000000;
+}
+
+.close_btn img {
+  width: 1.2em;
+  height: 1.2em;
+  background-color: transparent;
+}
+
+.filter_btn {
+  border: none;
+  font-size: 0.9rem;
+  padding: 0.9em 2em;
+  border-radius: 2em;
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.filter_btn.active {
+  border: 2px solid #05caad;
+}
+
+.fullmap_top > div {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  background-color: #00000072;
+  padding: 0.8em 1.5em;
+  border-radius: 0.8em;
+  color: #ffffff;
+}
+
+.fullmap_top > div img {
+  width: 3em;
+  height: 3em;
+}
+
+.fullmap_top > div span {
+  font-size: 1rem;
+}

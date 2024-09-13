@@ -1,0 +1,39 @@
+.loader {
+  height: 15px;
+  aspect-ratio: 5;
+  display: grid;
+  --_g: no-repeat radial-gradient(farthest-side, #05caad 94%, #05caad);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loader:before,
+.loader:after {
+  content: "";
+  grid-area: 1/1;
+  background: var(--_g) left, var(--_g) right;
+  background-size: 20% 100%;
+  animation: l32 1s infinite;
+}
+
+.loader:after {
+  background: var(--_g) calc(1 * 100% / 3), var(--_g) calc(2 * 100% / 3);
+  background-size: 20% 100%;
+  animation-direction: reverse;
+}
+
+@keyframes l32 {
+  80%,
+  100% {
+    transform: rotate(0.5turn);
+  }
+}
+
+/* #05CAAD */
+
+/* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */

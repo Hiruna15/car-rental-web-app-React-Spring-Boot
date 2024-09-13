@@ -1,0 +1,127 @@
+.review_panel_container {
+  width: 90%;
+  height: 90%;
+  background-color: #131317;
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 8em 0 8em;
+}
+
+.images_container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+}
+
+.images_container div {
+  width: 204px;
+  height: 122px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.images_container div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.details_conatiner {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.map_container {
+  width: 536px;
+  height: 275px;
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.details_conatiner > .top {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+}
+
+.details_conatiner > .top span {
+  padding: 0 0.4em;
+  border-left: 2px solid #05caad;
+  color: #ffffff;
+}
+
+.details_conatiner > .top div {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.details_conatiner > .middle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1em;
+  color: #ffffff;
+}
+
+.details_conatiner > .middle > div:nth-child(1) {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.4em;
+}
+
+.price {
+  font-size: 25px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 0.5em 1em;
+  background-color: #1c1c22;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px #000000;
+  border: 1px solid #ffffff0f;
+}
+
+.profile > div {
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+
+.buttons > button:nth-child(1) {
+  border: none;
+  font-size: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  color: #f8950b;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.buttons > button:nth-child(2) {
+  border: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: #00ffd9;
+  color: #111111;
+  padding: 0.7em 1.7em;
+  border-radius: 20px;
+  box-shadow: 0 0 8px #05caad;
+  cursor: pointer;
+}

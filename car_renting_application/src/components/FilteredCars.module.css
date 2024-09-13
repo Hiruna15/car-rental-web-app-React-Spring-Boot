@@ -1,0 +1,17 @@
+.filtered_cars_Container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+
+  /* height: 100vh; */
+  height: 88vh;
+  flex: 1;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  overflow: -webkit-scrollbar;
+  position: relative;
+
+  transform: translateX(50px);
+}

@@ -1,0 +1,21 @@
+.payment_container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.359);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: 2;
+}
+
+.payment_container > form {
+  width: 50%;
+  height: 50%;
+  background-color: black;
+}
+
+.button {
+  position: relative;
+  z-index: 10;
+}

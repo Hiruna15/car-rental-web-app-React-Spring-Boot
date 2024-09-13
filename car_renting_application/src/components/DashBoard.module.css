@@ -1,0 +1,66 @@
+.dashBoard_container {
+  width: 80%;
+  height: 100%;
+  overflow-y: auto;
+  background-color: #101014;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2em 4em 0 4em;
+}
+
+.statics_counts_container {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  width: 480px;
+}
+
+.top div {
+  width: fit-content;
+  padding: 0.4em 0.8em;
+  border-radius: 10px;
+  background-color: #06efcd;
+}
+
+.top {
+  display: flex;
+  align-items: flex-start;
+  font-size: 14px;
+  gap: 2.5em;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+
+.bottom span:nth-child(2) {
+  font-size: 1.5rem;
+}
+
+.bottom span:nth-child(1) {
+  font-size: 1.1rem;
+}
+
+.map_container {
+  width: 560px;
+  height: 310px;
+  background-color: #131317;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.barchart_container {
+  width: 622px;
+  height: 326px;
+  background-color: #131317;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 1em;
+  color: #ffffff;
+}

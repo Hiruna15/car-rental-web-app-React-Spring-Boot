@@ -1,0 +1,94 @@
+.profile_container {
+  height: 100vh;
+  padding-top: 6em;
+  background-color: #101014;
+  font-family: "Poppins";
+  color: #ffffff;
+  display: flex;
+  gap: 4em;
+  align-items: center;
+}
+
+.tabs_container {
+  width: 21em;
+  background-color: #70707004;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  padding-top: 1.5em;
+  position: relative;
+}
+
+.log_out_btn {
+  position: absolute;
+  bottom: 20px;
+  border: 1px solid #05caac5b;
+  color: #ffffff;
+  border-radius: 5px;
+  background-color: transparent;
+  font-size: 16px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7em 2em;
+  gap: 1em;
+  cursor: pointer;
+}
+
+.log_out_btn img {
+  width: 25px;
+  height: 25px;
+}
+
+.tabs_container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  align-items: center;
+  list-style: none;
+  width: 78%;
+}
+
+.tabs_container ul a {
+  color: #ffffff;
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+.tabs_container ul li {
+  text-align: center;
+  background-color: #1c1c22;
+  padding: 0.7em;
+  border-left: 2px solid #05caad;
+  border-right: 2px solid #05caad;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+.tabs_container ul li:hover {
+  transform: translateX(0.2em);
+  scale: 1.1;
+}
+
+.tabs_container ul li.active {
+  border: none;
+}
+
+.tabs_container ul li.active::before,
+.tabs_container ul li.active::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 12px;
+  background-color: #05caad;
+}
+
+.tabs_container ul li.active::before {
+  left: -12px;
+}
+
+.tabs_container ul li.active::after {
+  right: -12px;
+}

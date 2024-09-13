@@ -1,0 +1,41 @@
+@keyframes slideDown {
+  from {
+    top: -100px;
+    opacity: 0;
+  }
+  to {
+    top: 50%;
+    opacity: 1;
+  }
+}
+
+/* Animation from middle to top */
+@keyframes slideUp {
+  from {
+    top: 50%;
+    opacity: 1;
+  }
+  to {
+    top: -100px;
+    opacity: 0;
+  }
+}
+
+.popup_msge_container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background-color: black;
+  display: none;
+  opacity: 0;
+  border-radius: 20px;
+  color: white;
+  z-index: 8;
+}
+
+.popup_msge_container.show {
+  display: block;
+  animation: slideDown 1s forwards, slideUp 1s forwards 3s;
+}

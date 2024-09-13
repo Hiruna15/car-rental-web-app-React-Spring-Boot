@@ -1,0 +1,10 @@
+.mapContainer {
+  background-color: red;
+  display: flex;
+  justify-content: center;
+}
+
+.map {
+  height: 400px;
+  width: 400px;
+}

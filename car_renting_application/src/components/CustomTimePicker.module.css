@@ -1,0 +1,14 @@
+.time_picker {
+  padding: 1em 1.5em;
+  border-radius: 5px;
+  width: 16em;
+  background-color: #131317;
+  border: 1px solid #00ffd9;
+  box-shadow: 2px 4px 10px #000000;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.time_picker:disabled {
+  opacity: 0.5;
+}
