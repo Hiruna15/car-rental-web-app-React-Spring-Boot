@@ -1,0 +1,64 @@
+.status_dropDown {
+  position: absolute;
+  top: 1.2em;
+  left: 1.4em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 14em;
+  z-index: 2;
+  padding: 0.7em 1.2em;
+  border-radius: 0.6em;
+  background-color: #1c1c22;
+  text-transform: capitalize;
+  border: 1px solid #ffffff19;
+}
+
+.status_dropDown span {
+  font-size: 0.9rem;
+}
+
+.status_dropDown img {
+  width: 1.5em;
+  height: 1.5em;
+  cursor: pointer;
+}
+
+.status_dropDown ul {
+  position: absolute;
+  top: 105%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 0.2em;
+  align-items: center;
+  background-color: #303043;
+  padding: 0.4em 0;
+}
+
+.status_dropDown ul li {
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  text-transform: capitalize;
+  background-color: #1c1c22;
+  font-size: 0.8rem;
+  width: 90%;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.status_dropDown ul li:hover {
+  background-color: #05caad;
+  color: #111111;
+}
+
+.status_dropDown ul li.disable {
+  opacity: 0.4;
+}
+
+.status_dropDown ul li.disable:hover {
+  background-color: #1c1c22;
+  color: #ffffff;
+}

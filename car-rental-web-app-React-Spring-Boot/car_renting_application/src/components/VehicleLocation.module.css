@@ -1,0 +1,56 @@
+.location_container {
+  width: 55em;
+  height: 35em;
+  background-color: #131317;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+
+  position: relative;
+  /* z-index: 1; */
+}
+
+.location_details {
+  width: 95%;
+  height: 5em;
+  background-color: #09092fab;
+  position: absolute;
+  bottom: 1.7em;
+  border-bottom-left-radius: 0.2em;
+  border-bottom-right-radius: 0.2em;
+  z-index: 2;
+  display: flex;
+  gap: 2em;
+  align-items: center;
+  padding: 0 2em;
+}
+
+.location_details input {
+  font-size: 1rem;
+  padding: 0.7em;
+  border: none;
+  background-color: #00001370;
+  border-bottom: 3px solid #ffffff;
+  border-top-left-radius: 0.4em;
+  border-top-right-radius: 0.4em;
+  outline: none;
+  color: #ffffff;
+}
+
+.location_details input:nth-child(2) {
+  width: 40em;
+}
+
+.location_details input::placeholder {
+  color: #ffffffc2;
+}
+
+.map_container {
+  width: 95%;
+  height: 90%;
+  border-radius: 0.2em;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}

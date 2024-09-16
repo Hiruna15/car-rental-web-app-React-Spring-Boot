@@ -1,0 +1,55 @@
+.footer {
+  font-family: "Oxanium", sans-serif;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 4em;
+  background-color: #131317;
+}
+
+.footer > span {
+  font-size: 20px;
+}
+
+.social_media {
+  display: flex;
+  gap: 1em;
+  transform: translateX(100px);
+}
+
+.social_media > div {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  border: 1px solid #05caad;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.social_media > div img {
+  width: 35px;
+  height: 35px;
+}
+
+.contact_info {
+  display: flex;
+  gap: 1em;
+}
+
+.contact_info div {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.contact_info div a {
+  color: #ffffff;
+}
+
+.contact_info div img {
+  width: 30px;
+  height: 30px;
+}

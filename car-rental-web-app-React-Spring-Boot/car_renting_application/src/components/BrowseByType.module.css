@@ -1,0 +1,40 @@
+.browseByType_container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+  color: #ffffff;
+  font-family: "Oxanium", sans-serif;
+  padding: 0 7em;
+  margin-top: 5em;
+}
+
+.types_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  word-spacing: 7px;
+}
+
+.browseByType_container .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.browseByType_container .top div {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  cursor: pointer;
+}
+
+.browseByType_container .top div img {
+  width: 22px;
+  height: 22px;
+}

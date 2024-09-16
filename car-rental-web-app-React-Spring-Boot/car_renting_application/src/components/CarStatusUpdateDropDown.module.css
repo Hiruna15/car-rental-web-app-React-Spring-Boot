@@ -1,0 +1,54 @@
+.dropDown {
+  position: absolute;
+  top: 0;
+  right: 15em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1c1c22;
+  width: 15em;
+  padding: 0.6em 1em;
+  font-size: 0.9rem;
+  border-bottom-left-radius: 0.7em;
+  border-bottom-right-radius: 0.7em;
+}
+
+.dropDown img {
+  width: 1.8em;
+  height: 1.8em;
+  cursor: pointer;
+}
+
+.dropDown > span {
+  text-transform: capitalize;
+}
+
+.dropDown ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+  background-color: #303043;
+  border-radius: 0.2em;
+  padding: 0.4em 0;
+  align-items: center;
+}
+
+.dropDown ul li {
+  padding: 0.4em 1em;
+  font-size: 0.8rem;
+  border-radius: 0.4em;
+  width: 90%;
+  background-color: #22222a;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.dropDown ul li:hover {
+  background-color: aqua;
+  color: #111111;
+}

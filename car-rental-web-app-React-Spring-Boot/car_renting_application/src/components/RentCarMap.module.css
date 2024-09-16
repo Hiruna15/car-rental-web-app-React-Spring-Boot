@@ -1,0 +1,34 @@
+.mapContainer {
+  position: relative;
+}
+
+.map {
+  height: 100%;
+  width: 100%;
+}
+
+.customPopup {
+  font-family: "Oxanium", sans-serif;
+  width: 180px;
+  background-color: #131317;
+  color: #ffffff;
+  box-shadow: 0 5px 0 #05caad, 0 -5px 0 #05caad;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.customPopup img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

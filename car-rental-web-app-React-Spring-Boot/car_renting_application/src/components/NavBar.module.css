@@ -1,0 +1,151 @@
+.header_nav {
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Oxanium", sans-serif;
+  padding: 0 3em;
+  height: 60px;
+
+  /*  */
+  opacity: 0;
+  transform: translateY(-100%);
+  animation: navBarLoad 1s ease-in-out forwards 0.5s;
+}
+
+.header_nav.scrolled {
+  /* background-color: #131317; */
+  background-color: #101014;
+  border-bottom: 1px solid #ffffff12;
+}
+
+.header_nav h2 {
+  font-weight: 400;
+}
+
+.header_nav ul {
+  display: flex;
+  gap: 1em;
+  list-style: none;
+}
+
+.header_nav ul li {
+  border-bottom-left-radius: 1.25em;
+  border-bottom-right-radius: 1.25em;
+  font-size: 0.9rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.header_nav ul li.active {
+  background-color: #05caad;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.header_nav a {
+  color: #ffffff;
+  display: block;
+  width: 9em;
+  padding: 1em 0;
+}
+
+.header_nav nav {
+  align-self: flex-start;
+  text-transform: uppercase;
+  /* background-color: #131317; */
+  border-bottom-left-radius: 1.25em;
+  border-bottom-right-radius: 1.25em;
+  border-bottom: 1px solid #ffffff10;
+  border-left: 1px solid #ffffff10;
+  border-right: 1px solid #ffffff10;
+}
+
+.header_nav .profile_icon {
+  width: 2.8em;
+  height: 2.8em;
+  border-radius: 50%;
+  background-color: #131317;
+  border: 1px solid #ffffff08;
+  overflow: hidden;
+  margin-top: 1em;
+  transform: translateY(-10px);
+}
+
+.header_nav .profile_icon a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header_nav .profile_icon img {
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+  padding-bottom: 0.2em;
+}
+
+.header_nav .login_btn {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  overflow: hidden;
+
+  border: 1px solid #05caad;
+  box-shadow: inset 10px 0 0 #05caad;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.4s ease-in-out;
+}
+
+.header_nav .login_btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #05caad;
+  z-index: 0;
+  width: 0%;
+  transition: width 0.4s ease-in-out;
+}
+
+.header_nav .login_btn:hover::before {
+  width: 100%;
+}
+
+.header_nav .login_btn:hover {
+  transform: translateX(5px);
+}
+
+.header_nav .login_btn a {
+  width: 100%;
+  display: block;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes navBarLoad {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

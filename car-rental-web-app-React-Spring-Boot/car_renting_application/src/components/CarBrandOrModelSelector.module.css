@@ -1,0 +1,61 @@
+.car_brand_model_select_container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #1c1c22;
+  border: 1px solid #ffffff07;
+  /* padding: 0.9em 1.2em; */
+  width: 240px;
+  padding: 0 20px;
+  height: 56px;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px #00000025;
+}
+
+.car_brand_model_select_container input {
+  font-family: "roboto";
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  /* background-color: red; */
+  color: #ffffff;
+}
+
+.dropdown_btn {
+  background-color: transparent;
+  border: none;
+}
+
+.dropdown_btn > img {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.car_brand_model_select_container ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #1b1f27;
+  color: whitesmoke;
+  width: 100%;
+  max-height: 8em;
+  overflow-y: auto;
+  border-radius: 0.4em;
+  padding: 0 0.4em;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1em;
+}
+
+.car_brand_model_select_container ul button {
+  width: 100%;
+  border: none;
+  padding: 0.5em;
+  border: 1px solid rgba(255, 255, 255, 0.121);
+  border-radius: 0.4em;
+  cursor: pointer;
+  background-color: #1c1c22;
+  color: #ffffff;
+}

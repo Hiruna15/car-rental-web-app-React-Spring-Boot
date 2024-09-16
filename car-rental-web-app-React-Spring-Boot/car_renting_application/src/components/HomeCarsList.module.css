@@ -1,0 +1,44 @@
+.home_cars_list_container {
+  padding: 2em 4em;
+  position: relative;
+}
+
+.home_cars_list {
+  display: flex;
+  gap: 4em;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.home_cars_list::-webkit-scrollbar {
+  display: none;
+}
+
+.home_cars_list {
+  scrollbar-width: none;
+  overflow: -moz-scrollbars-none;
+}
+
+.home_cars_list {
+  -ms-overflow-style: none;
+}
+
+.right_scroll_btn,
+.left_scroll_btn {
+  position: absolute;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 2;
+}
+
+.right_scroll_btn {
+  right: 1.2em;
+}
+
+.left_scroll_btn {
+  left: 1.2em;
+}

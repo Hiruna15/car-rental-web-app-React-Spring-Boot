@@ -1,0 +1,72 @@
+/* Dark theme colors */
+.payment_container {
+  background-color: #000114;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.payment_form {
+  background-color: #0c0f2b;
+  padding: 40px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.payment_form label {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.payment_form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  background-color: #1d2048;
+  border: 1px solid #2b2e5e;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+}
+
+.payment_form input::placeholder {
+  color: #6b6d8d;
+}
+
+.pay_btn {
+  background-color: #2b6efb;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pay_btn:hover {
+  background-color: #1b4fdb;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .payment_container {
+    padding: 20px;
+  }
+
+  .payment_form {
+    padding: 20px;
+  }
+}

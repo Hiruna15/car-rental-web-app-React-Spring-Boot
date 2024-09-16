@@ -1,0 +1,74 @@
+.booking_steps_container {
+  font-family: "Oxanium", sans-serif;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7em;
+  margin: 7em 0;
+}
+
+.booking_steps_container > div {
+  display: flex;
+  gap: 1em;
+
+  opacity: 0;
+  transform: translateX(200px);
+
+  transition: transform 0.5s ease-in 0.7s, opacity 0.8s ease-in 0.7s;
+}
+
+.booking_steps_container.visible > div {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.booking_steps_container > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+}
+
+.booking_steps_container > div > div:nth-child(3) {
+  padding-top: 5em;
+}
+
+.booking_steps_container > span {
+  font-size: 4.2rem;
+  font-weight: 600;
+  padding-left: 0.8em;
+  line-height: 1.6em;
+  position: relative;
+
+  transform: translateX(150px);
+  opacity: 0;
+
+  transition: transform 0.5s ease-in, opacity 0.5s ease-in;
+}
+
+.booking_steps_container.visible > span {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.booking_steps_container > span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 82%;
+  width: 5px;
+  background-color: #05caad;
+  left: 0;
+  top: 0.4em;
+
+  transform: translateY(-150px);
+  opacity: 0;
+
+  transition: transform 0.5s ease-in 0.6s, opacity 0.5s ease-in 0.6s;
+}
+
+.booking_steps_container.visible > span::before {
+  transform: translateY(0);
+  opacity: 1;
+}

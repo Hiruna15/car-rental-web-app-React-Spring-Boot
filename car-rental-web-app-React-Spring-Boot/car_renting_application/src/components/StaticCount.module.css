@@ -1,0 +1,31 @@
+.static_count {
+  width: 226px;
+  height: 147px;
+  background-color: #131317;
+  border-radius: 20px;
+  border: 1px solid #ffffff12;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.6em 1em;
+  border: 1px solid #ffffff13;
+  color: #ffffff;
+}
+
+.static_count.first {
+  background-color: #05caad;
+  color: #111111;
+}
+
+.static_count > div:nth-child(1) div {
+  background-color: #222228;
+}
+
+.static_count.first > div:nth-child(1) div {
+  background-color: #06efcd;
+}
+
+img {
+  width: 30px;
+  height: 30px;
+}

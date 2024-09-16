@@ -1,0 +1,21 @@
+.validateError {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 5em;
+  background-color: rgba(233, 71, 12, 0.871);
+  top: 5em;
+  right: 20em;
+  padding: 0.7em 2em;
+  border-radius: 0.5em;
+  color: #ffffff;
+  /* font-size: 1rem; */
+}
+
+.validateError button {
+  border: none;
+  background-color: transparent;
+  font-size: 1.2rem;
+  color: #ffffff;
+  cursor: pointer;
+}

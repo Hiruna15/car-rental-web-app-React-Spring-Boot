@@ -1,0 +1,68 @@
+.myrentals_container {
+  height: 95%;
+  align-self: flex-start;
+  width: 68em;
+  background-color: #131317;
+  border: 1px solid #ffffff08;
+  border-radius: 0.6em;
+  padding-top: 5em;
+  position: relative;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  padding-bottom: 0.8em;
+}
+
+/* .myrentals_container > div:nth-child(2) {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+} */
+
+.rentals_scroll {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  overflow-y: auto;
+}
+
+.rental_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+  align-items: center;
+
+  opacity: 0;
+  transform: translateX(-200px);
+  animation: rentalContainerLoad 0.5s ease-in-out forwards;
+}
+
+.expand_container {
+  padding: 0.5em 1em 1.5em 1em;
+  border-bottom-left-radius: 0.7em;
+  border-bottom-right-radius: 0.7em;
+  background-color: #101014;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+}
+
+@keyframes rentalContainerLoad {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

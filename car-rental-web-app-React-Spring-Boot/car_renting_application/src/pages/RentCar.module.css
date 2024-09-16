@@ -1,0 +1,484 @@
+.rent_car_container {
+  background-color: #101014;
+  min-height: 100vh;
+  display: flex;
+  padding-bottom: 2em;
+  align-items: center;
+
+  justify-content: center;
+  padding-top: 0.8em;
+  gap: 4em;
+  font-family: "Oxanium", sans-serif;
+}
+
+.confirm_panel {
+  display: none;
+  width: 400px;
+  height: 400px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left_container {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  height: fit-content;
+
+  opacity: 0;
+  transform: translateY(100%);
+  animation: leftContainerLoad 0.9s ease-in-out forwards;
+}
+
+.right_container {
+  width: 45%;
+  height: fit-content;
+
+  opacity: 0;
+  transform: translateY(100%);
+  animation: rightContainerLoad 0.9s ease-in-out forwards;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+}
+
+.profile > div:nth-child(2) {
+  min-width: 10em;
+  height: 3.2em;
+  background-color: #333375;
+  border-bottom-right-radius: 0.7em;
+  border-top-right-radius: 0.7em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.profile > div:nth-child(1) {
+  padding: 0.6em;
+  border-radius: 0.8em;
+  background-color: #5353b8;
+  transform: translateX(0.5em);
+}
+
+.pro_image {
+  width: 2.8em;
+  height: 2.8em;
+  border-radius: 50%;
+  background-color: #131317;
+}
+
+.status_container {
+  width: 100%;
+  color: #ffffff;
+  /* background-color: black; */
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 0.8em 0;
+  border-bottom: 2px solid #05caad;
+}
+
+.status_container div {
+  width: 1em;
+  height: 1em;
+  background-color: #05caad;
+  border-radius: 0.2em;
+}
+
+.status_container span {
+  /* font-weight: 700; */
+  text-transform: capitalize;
+}
+
+.images_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.image_preview {
+  /* width: 100%; */
+  height: 25em;
+  border-radius: 0.7em;
+  overflow: hidden;
+  background-color: #131317;
+}
+
+.image_preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mini_images {
+  display: flex;
+  gap: 0.8em;
+  justify-content: center;
+}
+
+.mini_images > div {
+  width: 9em;
+  height: 5.2em;
+  border-radius: 0.7em;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: #131317;
+}
+
+.mini_images > div.active_mini_image {
+  border: 4px solid #00ffd9;
+}
+
+.mini_images > div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardetails_container1 {
+  display: flex;
+  justify-content: space-between;
+  background-color: #131317;
+  box-shadow: 2px 4px 4px #000000;
+  padding: 1em 2em;
+  border-radius: 0.7em;
+  color: #ffffff;
+  align-items: center;
+  border: 1px solid #ffffff18;
+}
+
+.cardetails_container1 > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+}
+
+.cardetails_container1 > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+}
+
+.brand {
+  font-size: 1.1rem;
+  color: #ffffffcd;
+}
+
+.model {
+  font-size: 1.6rem;
+}
+
+.type {
+  font-size: 0.9rem;
+  color: #ffffffcb;
+}
+
+.car_price {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.cardetails_container2 {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  color: #ffffff;
+  padding: 1em 0;
+  border-bottom: 2px solid #05caad;
+}
+
+.cardetails_container2 > div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.cardetails_container2 > div:nth-child(1) > div {
+  display: flex;
+  width: 8em;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  background-color: #131317;
+  padding: 0.7em;
+  border-radius: 0.7em;
+  box-shadow: 2px 4px 4px #000000;
+  border: 1px solid #ffffff1f;
+  /* border: 1px solid #4545ca52; */
+}
+
+.cardetails_container2 > div:nth-child(1) img {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.cardetails_container2 > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding: 0.7em 1em;
+  border-radius: 0.7em;
+  background-color: #131317;
+  border: 1px solid #ffffff1f;
+  box-shadow: 2px 4px 4px #000000;
+}
+
+.cardetails_container2 > div:nth-child(2) img {
+  width: 2em;
+  height: 2em;
+}
+
+.cardetails_container2 > div:nth-child(2) span {
+  font-size: 1.2rem;
+}
+
+.right_container {
+  background-color: #131317;
+  overflow: hidden;
+  border-radius: 0.7em;
+  box-shadow: 0 4px 4px #000000;
+  margin-top: 6.4em;
+}
+
+.map_container {
+  border-bottom-left-radius: 0.8em;
+  border-bottom-right-radius: 0.8em;
+  overflow: hidden;
+  background-color: #18181c;
+  box-shadow: 0 4px 8px #000000;
+  position: relative;
+  z-index: 0;
+}
+
+.map_container > div:nth-child(1) {
+  border-radius: 0.7em;
+  overflow: hidden;
+}
+
+.map_container > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  color: #ffffff;
+  padding: 1.6em 2em;
+}
+
+.map_container > div:nth-child(2) > div {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  /* font-family: "Barlow"; */
+  font-size: 0.9rem;
+  /* background-color: #3b3b82; */
+  padding: 0.3em 1em;
+  border-left: 2px solid #05caad;
+  background-color: #1c1c22;
+}
+
+.map_container > div:nth-child(2) img {
+  width: 1.8em;
+  height: 1.8em;
+}
+
+/*  */
+
+.rent_details_container {
+  color: #ffffff;
+  padding: 4em 0;
+  overflow: hidden;
+}
+
+.rent_details_container form {
+  display: flex;
+  align-items: center;
+  /* gap: 4em; */
+  justify-content: center;
+}
+
+.rent_details_container form > section:nth-child(1) > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.rent_details_container form > section:nth-child(1) {
+  font-family: "Barlow";
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.date_picker > div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.1em 1em;
+  border-radius: 5px;
+  width: 16em;
+  background-color: #131317;
+  border: 1px solid #00ffd9;
+  box-shadow: 2px 4px 10px #000000;
+}
+
+.date_picker > div img {
+  width: 1.2em;
+  height: 1.2em;
+  cursor: pointer;
+}
+
+.date_picker > div ul {
+  position: absolute;
+  top: 104%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+  width: 100%;
+  left: 0;
+  max-height: 14em;
+  overflow-y: auto;
+  background-color: #2b2b33;
+}
+
+.date_picker > div ul li {
+  padding: 0.6em;
+  background-color: #1e1e22;
+  cursor: pointer;
+  border-radius: 0.7em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ffffff37;
+}
+
+.date_disable {
+  opacity: 0.6;
+}
+
+.rent_period > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.4em 2em;
+  width: 10em;
+  border-radius: 5px;
+  background-color: #131317;
+  border: 1px solid #00ffd9;
+  box-shadow: 2px 4px 10px #000000;
+}
+
+.rent_period.disable {
+  opacity: 0.6;
+}
+
+.number_up_down_btns {
+  display: flex;
+  flex-direction: column;
+}
+
+.number_up_down_btns img {
+  width: 1.2em;
+  height: 1.2em;
+  cursor: pointer;
+}
+
+.rent_period input {
+  font-size: 1rem;
+  width: 5em;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  outline: none;
+}
+
+.rent_details_container form > section:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  /* align-items: flex-start; */
+  padding: 2em 2em 2em 2em;
+  border-bottom-left-radius: 0.7em;
+  border-top-left-radius: 0.7em;
+  background-color: #1e1e22;
+  transform: translateX(2.2em);
+  box-shadow: 0 4px 4px #111111a1;
+  border: 1px solid #ffffff12;
+  box-shadow: 0 4px 4px #000000;
+  position: relative;
+  height: 250px;
+}
+
+.rent_details_container form > section:nth-child(2) span {
+  font-size: 1.5rem;
+  /* font-weight: 700; */
+}
+
+.rent_details_container form > section:nth-child(2) span.disable {
+  opacity: 0.2;
+}
+
+.rent_details_container form > section:nth-child(2) input {
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  color: #ffffff;
+  background-color: transparent;
+  border-bottom: 2px solid #ffffff;
+  padding: 0.2em 0;
+}
+
+.rent_details_container form > section:nth-child(2) input.disable {
+  opacity: 0.2;
+}
+
+.rent_details_container form > section:nth-child(2) button {
+  border: none;
+  font-size: 1.3rem;
+  margin: 0 auto;
+  background-color: #00ffd9;
+  box-shadow: 0 0 8px #00ffd9;
+  color: #000000;
+  margin-top: 2em;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 15px 60px;
+  left: 70px;
+}
+
+.rent_details_container form > section:nth-child(2) button.disable {
+  opacity: 0.2;
+  box-shadow: 0 0 0;
+}
+
+@keyframes leftContainerLoad {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes rightContainerLoad {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}

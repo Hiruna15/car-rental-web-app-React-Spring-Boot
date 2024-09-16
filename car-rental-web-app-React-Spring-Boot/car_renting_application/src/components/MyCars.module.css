@@ -1,0 +1,61 @@
+.mycars_container {
+  height: 95%;
+  align-self: flex-start;
+  width: 68em;
+  background-color: #131317;
+  border: 1px solid #ffffff08;
+  border-radius: 0.6em;
+  padding-top: 5em;
+  position: relative;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  padding-bottom: 1.2em;
+}
+
+.cars_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.add_car_btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+}
+
+.add_car_btn button {
+  width: 8em;
+  height: 8em;
+  background-color: transparent;
+  border-radius: 1em;
+  border: 2px solid #05caad;
+  cursor: pointer;
+  transition: scale 0.4s ease-in-out;
+  overflow: hidden;
+}
+
+.add_car_btn button:hover {
+  scale: 0.9;
+}
+
+.add_car_btn button img {
+  width: 5em;
+  height: 5em;
+}
+
+.add_car_btn > span:nth-child(1) {
+  font-size: 1.2rem;
+}

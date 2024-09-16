@@ -1,0 +1,21 @@
+.new_vehicles_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #101014;
+}
+
+.new_vehicles {
+  width: 90%;
+  height: 90%;
+  background-color: #131317;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 5em;
+  padding-top: 4em;
+  overflow-y: auto;
+  position: relative;
+}

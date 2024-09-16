@@ -1,0 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap");
+
+.homepage_main_container {
+  max-width: 100vw;
+  background-color: #101014;
+  overflow: hidden;
+}

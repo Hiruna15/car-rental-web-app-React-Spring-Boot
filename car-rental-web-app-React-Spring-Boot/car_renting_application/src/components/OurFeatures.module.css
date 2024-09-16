@@ -1,0 +1,129 @@
+.our_features_section {
+  font-family: "Oxanium", sans-serif;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 8em;
+  position: relative;
+  margin-top: 8em;
+}
+
+.features_sec_header {
+  font-size: 44px;
+  position: relative;
+  width: fit-content;
+
+  transform: translateX(-100px);
+  opacity: 0;
+
+  transition: transform 0.4s ease-in, opacity 0.4s ease-in;
+}
+
+.features_sec_header.visible {
+  transform: translateX(3em);
+  opacity: 1;
+}
+
+.features_sec_header::before {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "";
+  width: 800px;
+  height: 1px;
+  background-color: #05caad;
+  box-shadow: 0 0 8px #00ffd9;
+  left: 105%;
+}
+
+.our_features_section > div {
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+}
+
+.feature {
+  position: relative;
+  width: 320px;
+  height: 380px;
+  /* background-color: #131317; */
+  border: 1px solid #ffffff0d;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+  padding: 3em 2.2em 0 2.2em;
+
+  box-shadow: 4px 4px 4px #000000;
+
+  transform: translateY(200px);
+  opacity: 0;
+  transition: box-shadow 0.6s ease-in-out, border 0.6s ease-in-out,
+    transform 0.4s ease-in, opacity 0.4s ease-in;
+}
+
+.feature.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.feature.visible:nth-child(2) {
+  transform: translateY(-3em);
+}
+
+.our_features_section::before,
+.our_features_section::after {
+  position: absolute;
+  content: "";
+  width: 58px;
+  height: 150px;
+  background-color: #05caad;
+  top: 60%;
+  transform: translateY(-50%);
+
+  transition: opacity 0.4s ease-in, transform 0.5s ease-in 0.5s;
+}
+
+.our_features_section::before {
+  left: 0;
+  transform: translateX(-105%);
+  opacity: 0;
+}
+
+.our_features_section::after {
+  right: 0;
+  transform: translateX(105%);
+  opacity: 0;
+}
+
+.our_features_section.visible::before {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.our_features_section.visible::after {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.feature:hover {
+  border: 1px solid #05caac39;
+  box-shadow: 0 0 10px #05caac3e;
+}
+
+.feature img {
+  position: absolute;
+  width: 129px;
+  height: 97px;
+  top: -40px;
+  left: -40px;
+}
+
+.feature span {
+  font-size: 26px;
+}
+
+.feature p {
+  line-height: 1.7;
+  color: #ffffffd7;
+}

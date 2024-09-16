@@ -1,0 +1,108 @@
+.car_collection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3em;
+  font-family: "Oxanium", sans-serif;
+  margin-top: 12em;
+}
+
+.car_collection > span {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  position: relative;
+
+  transform: translateX(-100px);
+  opacity: 0;
+
+  transition: transform 0.4s ease-in, opacity 0.4s ease-in;
+}
+
+.car_collection.visible > span {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.car_collection > span::before,
+.car_collection > span::after {
+  position: absolute;
+  content: "";
+  width: 2em;
+  height: 2px;
+  background-color: #05caad;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.car_collection > span::before {
+  right: 102%;
+}
+
+.car_collection > span::after {
+  left: 102%;
+}
+
+.home_cars_list {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+  width: 80%;
+  justify-content: center;
+  position: relative;
+}
+
+.more_cars {
+  position: absolute;
+  top: 105%;
+  display: flex;
+  align-items: center;
+  gap: 0.2em;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.more_cars::before {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 100%;
+  top: 0;
+  left: -10px;
+  background-color: #05caad;
+}
+
+.more_cars img {
+  width: 25px;
+  height: 25px;
+  transform: translateY(-1px);
+}
+
+.cars_loading {
+  width: 80%;
+  height: 10em;
+  position: relative;
+}
+
+.car_collection > nav {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: transform 0.4s ease-in, opacity 0.4s ease-in;
+}
+
+.car_collection.visible > nav {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.car_collection .home_cars_list > div {
+  transform: translateX(-100px);
+  opacity: 0;
+
+  transition: transform 0.4s ease-in 0.5s, opacity 0.4s ease-in 0.5s;
+}
+
+.car_collection.visible .home_cars_list > div {
+  transform: translateX(0);
+  opacity: 1;
+}
